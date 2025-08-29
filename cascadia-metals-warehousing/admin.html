@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Cascadia Metals Warehousing</title>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.19/main.css' rel='stylesheet' />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.19/index.global.min.js'></script>
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1>Cascadia Metals Ltd.</h1>
+            <span>Welcome, Admin</span>
+        </header>
+        <div class="admin-main">
+            <aside class="admin-sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Dashboard</a></li>
+                        <li><a href="#">Picking Lists</a></li>
+                        <li><a href="#">Work Orders</a></li>
+                        <li><a href="#">Scheduling</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="admin-content">
+                <div class="schedule-container">
+                    <div id='calendar'></div>
+                    <div id='external-events'>
+                        <h4>Unscheduled Orders</h4>
+                        <div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
+                            <div class='fc-event-main'>Order #101</div>
+                        </div>
+                        <div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
+                            <div class='fc-event-main'>Order #102</div>
+                        </div>
+                        <div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
+                            <div class='fc-event-main'>Order #103</div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
