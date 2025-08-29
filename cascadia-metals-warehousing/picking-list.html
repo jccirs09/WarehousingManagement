@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picking Lists - Cascadia Metals Warehousing</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1>Cascadia Metals Ltd.</h1>
+            <span>Welcome, Admin</span>
+        </header>
+        <div class="admin-main">
+            <aside class="admin-sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="admin.html">Scheduling</a></li>
+                        <li><a href="picking-list.html">Picking Lists</a></li>
+                        <li><a href="work-orders.html">Work Orders</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="admin-content">
+                <div class="picking-list-container">
+                    <header class="pl-header">
+                        <div class="pl-title">
+                            <h2>PICKING LIST</h2>
+                            <span id="pl-number"></span>
+                        </div>
+                        <div id="pl-header-details" class="pl-header-details">
+                            <!-- Details like Buyer, Sales Rep, etc. will be injected here -->
+                        </div>
+                    </header>
+
+                    <section class="pl-addresses">
+                        <div id="pl-sold-to">
+                            <!-- Sold To Address injected here -->
+                        </div>
+                        <div id="pl-ship-to">
+                            <!-- Ship To Address injected here -->
+                        </div>
+                    </section>
+
+                    <section class="pl-notes">
+                        <ul id="pl-general-notes">
+                            <!-- General notes will be injected here -->
+                        </ul>
+                    </section>
+
+                    <section class="pl-line-items">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>LINE</th>
+                                    <th>QUANTITY</th>
+                                    <th>QTY. STAGED</th>
+                                    <th class="description-col">DESCRIPTION</th>
+                                    <th>WIDTH</th>
+                                    <th>LENGTH</th>
+                                    <th>WEIGHT</th>
+                                </tr>
+                            </thead>
+                            <tbody id="pl-items-body">
+                                <!-- Line items will be injected here -->
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <footer class="pl-footer">
+                        <div class="pl-pulled-by">
+                            <strong>PULLED BY:</strong> _________________________
+                        </div>
+                        <div id="pl-total-weight" class="pl-total-weight">
+                            <!-- Total weight will be injected here -->
+                        </div>
+                    </footer>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="picking-list.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
